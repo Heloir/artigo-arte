@@ -1,0 +1,107 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Luxu';
+    src: url(LuxuriousRoman-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url(Oswald-VariableFont_wght.ttf);
+}
+@import url('https://fonts.googleapis.com/css2?family=Vujahday+Script&display=swap');
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+
+    --font: 'Luxu';
+    --font1: 'Vujahday Script', sans-serif;
+}
+
+body{
+    position: relative;
+    background-color: white;
+}
+
+nav{
+    box-shadow: 1px 1px 6px rgba(31, 31, 31, 0.315);
+    top: 0;
+    position: sticky;
+    padding: 20px;
+    background-color: rgb(29, 29, 29);
+    
+}
+
+nav a{
+    transition: 0.5s;
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover{
+    color: rgb(216, 214, 214);
+    
+}
+
+nav li{
+    margin-left: 20px;
+    display: inline-block;
+    list-style: none;
+}
+
+nav #a{
+    float: right;
+}
+
+
+article h1{
+    font-family: --font1;
+    padding: 20px;
+    font-size: 50px;
+    text-align: center;
+
+}
+
+article h2{
+    font-family: 'Oswald';
+    padding: 20px;
+}
+
+main{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 1px 1px 6px black;
+    background-color: rgba(199, 199, 199, 0.308);
+    margin: auto;
+    max-width: 900px;
+    
+}
+
+article p{
+    line-height: 35px;
+    font-size: 3.2vh;
+    font-family: var(--font);
+    padding: 30px;
+}
+
+footer{
+    margin: auto;
+    
+    color: white;
+    background-color: rgb(17, 17, 17);
+    padding: 10px;
+    font-size: 15px;
+    text-align: center;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
